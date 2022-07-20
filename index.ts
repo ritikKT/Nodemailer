@@ -26,7 +26,7 @@ import { body, validationResult } from 'express-validator';
 //     res.sendStatus(201);
    
 //   },
-// );
+// ); 
 
 app.get('/form',(req,res)=>
 {
@@ -68,7 +68,7 @@ app.post('/formPost',body('email').isEmail(),body('emailcc').isEmail(),body('sub
   SendMailFunc(message,function(error:any,info:any)
   {
       if(error) throw Error(error);
-      console.log('email sent sucessfullyyyyy');
+      console.log('email sentttt sucessfullyyyyy');
       console.log(info);
   });
 
